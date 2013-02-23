@@ -1,0 +1,30 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<!--
+    Copyright 2010 Google Inc.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<ui:UiBinder
+    xmlns:ui="urn:ui:com.google.gwt.uibinder"
+    xmlns:g="urn:import:com.google.gwt.user.client.ui">
+    <ui:with type="com.example.jumpnote.web.client.resources.Resources" field="res" />
+    <g:HTMLPanel>
+        <h2>My Notes</h2>
+        <g:FlowPanel styleName="notesList" ui:field="notesList"/>
+        <g:PushButton ui:field="createButton">
+            <g:upFace image="{res.btn_create}"/>
+            <g:upHoveringFace image="{res.btn_create_on}"/>
+            <g:downFace image="{res.btn_create_on}"/>
+        </g:PushButton>
+    </g:HTMLPanel>
+</ui:UiBinder>

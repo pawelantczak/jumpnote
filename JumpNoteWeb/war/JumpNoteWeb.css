@@ -1,0 +1,227 @@
+body {
+	margin: 50px;
+	
+	font-size: 13px;
+	font-family: helvetica, arial, sans-serif;
+	color: #333;
+}
+
+#container {
+	width: 600px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#top {
+	position: relative;
+}
+
+#logo {
+	display: block;
+	background: transparent url(images/jumpnote_logo.png) no-repeat scroll top left;
+	width: 105px;
+	height: 105px;
+}
+
+#logo span {
+	display: none;
+}
+
+#messagePanelContainer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+#messagePanelInnerContainer {
+	max-width: 434px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#messagePanel {
+	display: inline-block;
+	position: relative;
+	top: -20px;
+	padding: 26px 8px 6px 8px;
+	
+	text-align: left;
+	font-weight: bold;
+	background-color: #b55a1f;
+	color: #fff;
+	
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#c37848), to(#b55a1f));
+  	-webkit-box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+}
+
+#loginPanel {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#loginPanel a {
+	color: #00c;
+}
+
+#userNameLabel {
+	font-weight: bold;
+}
+
+/* content */
+
+#screenPanel a {
+	color: #b55a1f;
+}
+
+h2, .big-text {
+	margin: 36px 0 12px 0;
+	font-size: 36px;
+	line-height: 42px;
+	letter-spacing: -2px;
+	font-weight: bold;
+}
+
+/* notes list */
+
+.notesList {
+	margin-bottom: 24px;
+}
+
+.notesList .empty {
+	color: #888;
+}
+
+.noteItem {
+	position: relative;
+	height: 36px;
+	padding-right: 70px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.noteItem .noteTitle {
+	display: inline;
+	padding-right: 6px;
+	height: 36px;
+	line-height: 36px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+	text-decoration: none;
+}
+
+.noteItem:hover .noteTitle {
+	color: #b55a1f;
+}
+
+.noteItem .noteSnippet {
+	display: inline;
+	line-height: 36px;
+	font-size: 13px;
+	color: #ccc;
+}
+
+.noteItem .controls {
+	visibility: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.noteItem:hover .controls {
+	visibility: visible;
+}
+
+/* note editor */
+
+.noteEditor .noteTitle,
+.noteEditor .noteBody {
+	display: block;
+	width: 566px;
+	padding: 8px;
+	border: 1px solid #ffffff;
+	border-radius: 4px;
+	outline: 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	
+  	-webkit-transition: border 75ms ease-out;
+}
+
+.noteEditor .noteTitle {
+	margin: 36px 0 12px 0;
+	background-color: #fae6da;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 18px;
+}
+
+.noteEditor .noteTitle:focus {
+	border: 1px solid #b55a1f;
+}
+
+.noteEditor .noteBody {
+	height: 318px;
+	margin: 12px 0;
+	background-color: #fdf6f2;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.noteEditor .noteBody:focus {
+	border: 1px solid #b55a1f;
+}
+
+/* GWT overrides */
+
+.gwt-PushButton {
+	display: inline;
+}
+
+/* Android download and QR link */
+
+#android-download-link {
+	display: block;
+	text-align: center;
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+
+	padding: 12px;
+	text-decoration: none;
+	
+	font-weight: bold;
+	background-color: #b55a1f;
+	color: #fff;
+	
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#c37848), to(#b55a1f));
+  	-webkit-box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+}
+
+#android-qr-code {
+	display: inline-block;
+	margin-top: 150px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border: 1px solid #ccc;
+}
+
+#android-qr-code img {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#android-qr-code .note {
+	margin: 20px 20px 20px 0;
+	display: inline-block;
+	vertical-align: top;
+}

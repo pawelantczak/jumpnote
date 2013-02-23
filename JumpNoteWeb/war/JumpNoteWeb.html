@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.0r4/build/reset/reset-min.css">
+    <link rel="stylesheet" type="text/css" href="JumpNoteWeb.css">
+    <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0">
+    <title>JumpNote</title>    
+    <!-- This script loads your compiled module. If you add any GWT meta tags, they must be added before this line. -->
+    <script type="text/javascript" language="javascript" src="jumpnoteweb/jumpnoteweb.nocache.js"></script>
+  </head>
+  <body>
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+
+	<script type="text/javascript">
+		if (navigator.userAgent.indexOf('Android') >= 0) {
+			document.write('<a id="android-download-link" href="http://jumpnote.googlecode.com/files/JumpNoteAndroid-latest.apk">Install JumpNote for Android!</a>');
+		}
+	</script>
+
+	<div id="messagePanelContainer">
+		<div id="messagePanelInnerContainer">
+			<div id="messagePanel">Loading...</div>
+		</div>
+	</div>
+
+	<div id="container">
+		<div id="top">
+			<h1><a id="logo" href="#"><span>JumpNote Home</span></a></h1>
+			<div id="loginPanel"></div>
+		</div>
+		
+    	<div id="screenPanel"></div>
+
+		<div id="android-qr-code">
+			<img src="http://chart.apis.google.com/chart?chs=100x100&cht=qr&chl=http://jumpnote.googlecode.com/files/JumpNoteAndroid-latest.apk&chld=L|1"/>
+			<div class="note">Scan to install<br>JumpNote for<br>your Android device!</div>
+		</div>
+    </div>
+
+    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+  </body>
+</html>

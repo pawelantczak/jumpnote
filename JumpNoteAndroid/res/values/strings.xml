@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2010 Google Inc.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources>
+    <string name="app_name">JumpNote</string>
+    <string name="app_description">Your notes, in the cloud!</string>
+
+    <string name="menu_insert">Add note</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_revert">Revert</string>
+    <string name="menu_sync_now">Sync now</string>
+    <string name="menu_discard">Discard</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_account_settings">Account settings</string>
+    <string name="menu_account_list">Accounts</string>
+
+    <string name="resolve_edit">Edit note</string>
+    <string name="resolve_edit_title">Edit title</string>
+
+    <string name="title_create">Create note</string>
+    <string name="title_edit">Edit note</string>
+    <string name="title_note">Note</string>
+    <string name="title_edit_title">Note title:</string>
+
+    <string name="note_list">Notes</string>
+    <string name="preferences">Preferences</string>
+
+    <string name="button_ok">OK</string>
+
+    <string name="error_title">Error</string>
+    <string name="error_message">Error loading note</string>
+
+    <string name="note_saved_message">Note saved.</string>
+
+    <string name="local_notes">Local notes</string>
+
+    <string name="account_list_status_notes">%d notes</string>
+    <string name="account_list_status_sync_disabled">Automatic sync disabled</string>
+</resources>
